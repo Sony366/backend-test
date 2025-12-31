@@ -3,8 +3,20 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000; // Use Render's port or default to 3000
 
+const cors = require('cors');
+app.use(cors());
+
+
 app.get('/', (req, res) => {
   res.send('Server is Live!');
+});
+
+app.get('/user/information',(req,res)=>{
+  res.send('server for the backend Test');
+});
+
+app.get('/user',(req,res)=>{
+  res.json({user : "Khushal Soni", Phone:954910121});
 });
 
 app.listen(PORT, () => {

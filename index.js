@@ -11,6 +11,10 @@ app.get('/user/information',(req,res)=>{
   res.send('server for the backend Test');
 });
 
+app.get('/user',(req,res)=>{
+  res.json({user : "Khushal Soni", Phone:9649919609});
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

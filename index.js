@@ -12,7 +12,7 @@ app.get('/user/information',(req,res)=>{
 });
 
 app.get('/user',(req,res)=>{
-  res.json({user : "Khushal Soni", Phone:9649919609});
+  res.json({user : "Khushal Soni", Phone:954910121});
 });
 
 app.listen(PORT, () => {

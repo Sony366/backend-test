@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
   res.send('Server is Live!');
 });
 
+app.get('/user/information',(req,res)=>{
+  res.send('server for the backend Test');
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
